@@ -1,3 +1,7 @@
+import React from 'react'
+import { useQuery } from 'react-query'
+import { getNotes } from './requests'
+
 const App = () => {
   const addNote = async (event) => {
     event.preventDefault()
@@ -9,22 +13,27 @@ const App = () => {
   const toggleImportance = (note) => {
     console.log('toggle importance of', note.id)
   }
+  const result = useQuery('notes', getNotes)
 
-  const notes = []
+  if (result.isLoading) {
+    return <div>loading data...</div>
+  }
 
-  return(
+  const notes = result.data
+
+  return (
     <div>
-      <h2>Notes app</h2>
+      <h2>Notes React Query App</h2>
       <form onSubmit={addNote}>
-        <input name="note" />
-        <button type="submit">add</button>
+        <input name='note' />
+        <button type='submit'>add</button>
       </form>
-      {notes.map(note =>
+      {notes.map((note) => (
         <li key={note.id} onClick={() => toggleImportance(note)}>
-          {note.content} 
+          {note.content}
           <strong> {note.important ? 'important' : ''}</strong>
         </li>
-      )}
+      ))}
     </div>
   )
 }
