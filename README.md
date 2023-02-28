@@ -3,7 +3,8 @@
 
 <detail>
 <summary>
-## $\color{cyan}{Part6-d}$
+$\color{cyan}{Part6d}$
+
 </summary>
 
 ```
