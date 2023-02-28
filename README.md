@@ -2,10 +2,8 @@
 </h1>
 
 <detail>
-
 <summary>
 ## $\color{cyan}{Part6-d}$
-
 </summary>
 
 ```
