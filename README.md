@@ -1,10 +1,9 @@
-<h1 align="center"> $\textcolor{orange}{Redux Query\ }$
+<h1 align="center"> $\textcolor{orange}{React\ Query\ }$
 </h1>
 
 <detail>
 
 <summary>
-
 ## $\color{cyan}{Part6-d}$
 
 </summary>
