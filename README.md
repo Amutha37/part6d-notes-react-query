@@ -1,7 +1,7 @@
 <h1 align="center"> $\textcolor{orange}{React\ Query\ }$
 </h1>
 
-<detail>
+<details>
 <summary>
 $\color{cyan}{Part6d}$
 
@@ -38,4 +38,4 @@ npm install json-server --save-dev
 
     'preview `http://localhost:3001/notes`
 
-</detail>
+</details>
